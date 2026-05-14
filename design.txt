@@ -1,0 +1,9 @@
+Create a python script that uses tkinter for GUI. the script will act as a llmama.cpp client that connect to a llama.cpp server and sends a chat completion request through API.  the server is running a vision model, so the script will have a way to load an image. by default the script will include the image by encoding it into base64. it should support a different mode where it can send image_url that will point to local image (example: "http://127.0.0.1:8080/cat.jpg"). user prompt should be empty. display returned text. also measure the time it took to complete the request and display it.
+
+The GUI will have:
+-"load image" button that will open a dialog to load an image.
+-an area to display loaded image
+-"Run" button that sends request to llama server.
+-Text window that displays results of chat completion request including timing information
+-"Use image URL" checkbox that control the mode of request
+-text box to configure server ip and port number .default to 127.0.0.1:8080
